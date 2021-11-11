@@ -54,6 +54,7 @@ pipeline {
                 )
             }
         }
+/*        
         stage('Smoke Test'){
             when {
                 branch 'master'
@@ -71,6 +72,7 @@ pipeline {
                 }
             }
         }
+  */
         stage('DeployToProduction') {
             when {
                 branch 'master'
