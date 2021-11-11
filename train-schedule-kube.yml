@@ -9,7 +9,7 @@ spec:
   ports:
   - protocol: TCP
     port: 8080
-    nodePort: 31657
+    
 
 ---
 
@@ -39,7 +39,6 @@ spec:
         livenessProbe:
           httpGet:
             path: /
-            port: 31657
           initialDelaySeconds: 15
           timeoutSeconds: 1
           periodSeconds: 10
